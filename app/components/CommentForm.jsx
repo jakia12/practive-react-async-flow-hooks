@@ -28,7 +28,8 @@ export default function CommentForm() {
             name="comment"
             id="comment"
             rows="4"
-            className="peer w-full border border-gray-300 rounded-md p-3 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+            className="w-full border border-blue-400 p-3 rounded focus:outline-none focus:ring focus:border-blue-500"
+            rows={4}
             placeholder="Type your comment here..."
           />
           <label
