@@ -19,3 +19,11 @@ export async function getUser() {
     (res) => res.json()
   );
 }
+
+export async function fakeAddComment(_, formData) {
+  const text = formData.get("comment")?.trim();
+  if (!text) return { error: "Comment required" };
+
+  await new Promise((res) => setTimeout(res, 1000));
+  return { message: "Added!", comment: text };
+}

@@ -41,14 +41,8 @@ export default function Newsletter() {
             name="email"
             id="email"
             placeholder="Email address"
-            className="text-black peer w-full border border-gray-300 rounded-md p-3  focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="placeholder-[#888] text-black  w-full border border-gray-300 rounded-md p-3  focus:outline-none focus:ring-2 focus:ring-green-500"
           />
-          <label
-            htmlFor="email"
-            className="absolute left-3 top-2 text-sm text-gray-500 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 transition-all"
-          >
-            Email Address
-          </label>
         </div>
         <SubmitButton />
         {state?.error && (

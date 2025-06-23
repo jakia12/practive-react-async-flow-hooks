@@ -27,19 +27,14 @@ export default function CommentForm() {
           <textarea
             name="comment"
             id="comment"
-            rows="4"
-            className="w-full border border-blue-400 p-3 rounded focus:outline-none focus:ring focus:border-blue-500"
             rows={4}
+            className="placeholder-[#888] w-full border border-blue-400 p-3 rounded focus:outline-none focus:ring focus:border-blue-500 text-black"
             placeholder="Type your comment here..."
           />
-          <label
-            htmlFor="comment"
-            className="absolute left-3 top-2 text-sm text-gray-500 peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 transition-all"
-          >
-            Your Comment
-          </label>
         </div>
+
         <SubmitButton />
+
         {state?.error && (
           <p className="text-sm text-red-500 font-medium mt-2">{state.error}</p>
         )}
